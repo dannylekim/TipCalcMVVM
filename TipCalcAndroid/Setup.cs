@@ -4,7 +4,7 @@ using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Platform;
 using TipCalc;
 
-namespace TipCalc.UI.Droid
+namespace TipCalcAndroid
 {
     public class Setup : MvxAndroidSetup
     {

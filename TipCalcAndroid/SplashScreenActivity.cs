@@ -4,12 +4,14 @@ using MvvmCross.Droid.Views;
 
 namespace TipCalcAndroid
 {
-    [Activity(Label = "SplashScreen", MainLauncher = true, Icon = "@drawable/icon")]
-    public class SplashScreenActivity : MvxSplashScreenActivity
+    [Activity(Label = "SplashScreen", MainLauncher = true, NoHistory = true, Icon = "@drawable/icon")]
+    public class SplashScreenActivity
+      : MvxSplashScreenActivity
     {
-       public SplashScreenActivity() : base(Resource.Layout.SplashScreen)
+        public SplashScreenActivity()
+        : base(Resource.Layout.SplashScreen)
         {
-
         }
     }
+
 }

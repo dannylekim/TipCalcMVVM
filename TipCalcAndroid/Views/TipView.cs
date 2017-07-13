@@ -1,10 +1,10 @@
 ﻿using Android.App;
 using MvvmCross.Droid.Views;
+using TipCalcAndroid;
 
-
-namespace TipCalcAndroid.Views
+namespace TipCalc.UI.Droid.Views
 {
-    [Activity(Label = "Tip", MainLauncher = true)]
+    [Activity(Label = "Tip")]
     public class TipView : MvxActivity
     {
         protected override void OnViewModelSet()
