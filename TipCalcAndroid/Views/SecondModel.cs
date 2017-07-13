@@ -4,12 +4,12 @@ using TipCalcAndroid;
 
 namespace TipCalcAndroid
 {
-    [Activity(Label = "Tip")]
-    public class TipView : MvxActivity
+    [Activity(Label = "Second")]
+    public class SecondModel : MvxActivity
     {
         protected override void OnViewModelSet()
         {
-            SetContentView(Resource.Layout.View_Tip);
+            SetContentView(Resource.Layout.SecondViewModel);
         }
     }
 }

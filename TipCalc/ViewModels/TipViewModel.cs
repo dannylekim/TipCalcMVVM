@@ -1,5 +1,8 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿
+using System;
 using System.Windows.Input;
+using MvvmCross.Core.Platform;
+using MvvmCross.Core.ViewModels;
 using TipCalc.Services;
 
 namespace TipCalc.ViewModels
@@ -50,13 +53,7 @@ namespace TipCalc.ViewModels
             Tip = _calculation.TipAmount(SubTotal, Generosity);
         }
 
-        public ICommand GoCommand
-        {
-            get
-            {
-                return new MvxCommand(() => ShowViewModel<SecondViewModel>());
-            }
-        }
+        public ICommand GoCommand => new MvxCommand(() => ShowViewModel<SecondViewModel>());
 
     }
   

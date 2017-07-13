@@ -33,4 +33,10 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       local:MvxBind="Text Tip" />
+  <Button
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Go"
+      android:textSize="40dp"
+      local:MvxBind="Click GoCommand" />
 </LinearLayout>
